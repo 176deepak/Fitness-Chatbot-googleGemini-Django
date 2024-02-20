@@ -1,0 +1,103 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Chatbot</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="shortcut icon" href="{% static 'images/rb-yoga.png'%}" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="block">
+            <img class="logo" src="{% static 'images/rb-yoga.png'%}" alt="">
+            <span class="text" style="color: aliceblue;">
+                Fitness Bot
+            </span>
+        </div>
+    </nav>
+
+    <div class="container">
+        
+        <div class="chatbot">
+            <div class="chat-section"> 
+                <textarea name="response" id="">{{ response }}</textarea>   
+                <form method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <input type="text" name = "user-query" placeholder="Enter text......">
+                    <button>Ask</button>
+                </form>
+            </div>
+
+            <div class="personalized-chatbot">
+                <div class="p-chatbot">
+                    <div class="p-chatbot-title">
+                        <p>
+                            Personilized Workout 
+                        </p>    
+                    </div>
+                    <div class="p-chatbot-form">
+                        <form action="" class="personal-details" method="post" enctype="multipart/form-data">
+                            {% csrf_token %}
+                            <div class="p-bot-form">
+                                <div class="label">
+                                    <label for="age">Age:</label>
+                                </div>
+                                <div class="input">
+                                    <input type="text" name = "age" placeholder="Enter age....." class="detail">
+                                </div>
+                            </div>
+                            <div class="p-bot-form">
+                                <div class="label">
+                                    <label for="body_type">Body Type:</label>
+                                </div>
+                                <div class="input">
+                                    <select name="body_type" id="bodyt" class="detail">
+                                        <option value="ectomorph">Ectomorph</option>
+                                        <option value="mesomorph">Mesomorph</option>
+                                        <option value="endomorph">Endomorph</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="p-bot-form">
+                                <div class="label">
+                                    <label for="goals">Goal:</label>
+                                </div>
+                                <div class="input">
+                                    <select name="goals" id="goal" class="detail">
+                                        <option value="body building">Body Building</option>
+                                        <option value="reduce belly fat">Reduce Belly Fat</option>
+                                        <option value="fit body">Fit Body</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="p-bot-form">
+                                <div class="label">
+                                    <label for="image">Image:</label>
+                                </div>
+                                <div class="input">
+                                    <input type="file" name = "image" placeholder="Upload image....." class="detail">    
+                                </div>
+                            </div>
+                            <div>
+                                <button type="submit" class="button">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="p-chatbot-output">
+                        <textarea name="" id="" cols="30" rows="10">{{ chat }}</textarea>
+                    </div>           
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

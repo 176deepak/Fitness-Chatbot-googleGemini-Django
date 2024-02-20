@@ -1,0 +1,160 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: linear-gradient(to right, #000000, #737373);
+    overflow: hidden;
+}
+
+.navbar {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #5170ff, #ff66c4);
+}
+
+.block{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0.3% 1% 0.3% 1%;
+}
+
+.logo{
+    width: 2%;
+}
+
+.block span{
+    margin-left: 0.5%;
+    font-size: 250%;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+}
+
+.container{
+    margin: 1.5% 1% 2% 1%;
+    height: 85vh;
+}
+
+.chatbot{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.chat-section{
+    height: 100%;
+    margin-right: 1.5%;
+    background-color: #6b6969;
+    border-radius: 10px;
+}
+
+.chat-section form{
+    height: 100%;
+    margin: 2%;
+}
+
+.chat-section textarea{
+    width: 96%;
+    margin: 1% 2% 0 2%;
+    height: 85%;
+    background-color: #6b6969;
+    border-radius: 10px;
+    border: none;
+    color: aliceblue;
+}
+
+.chat-section input{
+    width: 90%;
+    padding: 1.5% 0 1.5% 3px;
+    color: aliceblue;
+    background: linear-gradient(to right, #000000, #737373);
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 4px 8px 0 #737373, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.chat-section button{
+    width: 9%;
+    padding: 1.5% 0 1.5% 3px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 4px 8px 0 #737373, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background: linear-gradient(to right, #5170ff, #ff66c4);
+    color: aliceblue;
+    font-weight: bold;
+}
+
+.personalized-chatbot{
+    color: aliceblue;
+    margin-left: 1.5%;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, #000000, #737373);
+    text-align: center;
+}
+
+.p-chatbot{
+    height: 100%;
+    color: aliceblue;
+    width: 96%;
+    margin: 2% 2% 2% 2%;
+}
+
+.p-chatbot-title{
+    margin-top: 2%;
+    font-size: 1.5em;
+    font-family: "Nova Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.p-bot-form{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    margin-bottom: 2%;
+}
+
+.label{
+    text-align: right;
+}
+
+.detail{
+    width: 80%;
+}
+
+.input{
+    text-align: left;
+    margin-left: 5px;
+}
+
+.personal-details{
+    margin-top: 4%;
+}
+
+.button{
+    width: 80%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    text-align: center;
+    padding: 5px;
+    border-radius: 7px;
+    background: linear-gradient(to right, #5170ff, #ff66c4);
+    border: none;
+}
+
+.p-chatbot-output{
+    width: 95%;
+    border-radius: 10px;
+    height: 58%;
+    margin:2% 2% 2% 2% ; 
+}
+
+.p-chatbot-output textarea{
+    background-color: #6b6969;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    color: aliceblue;
+}
