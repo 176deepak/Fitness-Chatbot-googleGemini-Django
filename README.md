@@ -8,7 +8,7 @@ This is Fitness Chatbot where user's chat with bot and get advice, diet plan, wo
 3. Backend: `Django, Python`
 4. LLM Model: `Google Gemini Pro and Gemini Pro Vision`
 5. Version Control: `Git and Github`
-6. Cloud Platform: `Google Cloud Platform(GCP)`
+6. Cloud Platform: `Any Cloud Platform`
 
 ## How to Run on Local Machine
 1. **Create a folder in any disk where you want your project should store**
@@ -49,7 +49,5 @@ This is Fitness Chatbot where user's chat with bot and get advice, diet plan, wo
     ```
 10. **You can see the running project or WebApp**
 
-## How to deploy on cloud
-
 ## WebApp Snapshots
-![Project snap](https://drive.google.com/uc?id=1biVyxZ3j96mPpXEEBJrC1ZWk3-9Ynk8T)
+![Project snap](https://drive.google.com/uc?id=13afkPi4Ftup60nfyyOwpnuAhq3GY0cP3)
