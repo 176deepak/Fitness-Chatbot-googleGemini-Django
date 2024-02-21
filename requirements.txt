@@ -1,0 +1,4 @@
+django
+generativeai
+Pillow
+dotenv
