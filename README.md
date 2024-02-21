@@ -33,16 +33,21 @@ This is Fitness Chatbot where user's chat with bot and get advice, diet plan, wo
     ```
     pip install -r requirements.txt
     ```
-7. **After installing just hit the command in cmd**
+7. **Goto chatbot app folder and update the utils.py file by replacing your API Key**
+    ```
+    # configure the API KEY 
+    genai.configure(api_key = "REPLACE_WITH_YOUR_API_KEY")
+    ```
+8. **After installing just hit the command in cmd**
     ```
     python manage.py makemigrations
     python manage.py migrates
     ```
-8. **Or you can directly hit the command**
+9. **Or you can directly hit the command**
     ```
     python manage.py runserver
     ```
-9. **You can see the running project or WebApp**
+10. **You can see the running project or WebApp**
 
 ## `How to deploy on cloud`
 
