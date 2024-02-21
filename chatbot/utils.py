@@ -1,7 +1,15 @@
 # load the required modules
 import re
 import os
+import yaml
 import google.generativeai as genai
+
+
+def read_yaml(file_path):
+    # Read YAML file
+    with open(file_path, 'r') as yaml_file:
+        config = yaml.safe_load(yaml_file)
+    return config
 
 
 # function for handle the images
@@ -12,7 +20,6 @@ def input_image_setup(uploaded_file):
 
     # Get the mime type of the file
     mime_type = 'image/' + uploaded_file.split('.')[-1]
-
     image_parts = [
         {
             "mime_type": mime_type,
@@ -23,15 +30,25 @@ def input_image_setup(uploaded_file):
 
 
 def reformat_response(response):
-    # cleaned text
+    # cleaned text, removes the **, * from generated text
     text = re.sub(r"\*", "", response.text)
     return text
 
 
 def ask_to_bot(query:str, image=None) -> str:
+    '''
+    LLM chatbot
+    works: 
+        according to given parameters, this function initialize the two different models.
+            1. Gemini-Pro
+            2. Gemini-Pro-Vision
+        
+        If user upload an image it calls the gemini-pro-vision model, else it calls the gemini-pro model
+    '''
 
+    yaml_file = read_yaml("configuration.yaml")
     # configure the API KEY 
-    genai.configure(api_key = "REPLACE_WITH_YOUR_API_KEY")
+    genai.configure(api_key = yaml_file['API_KEY'])
 
     if image is None:
         # input prompt for general fitness bot
