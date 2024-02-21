@@ -51,3 +51,11 @@ This is Fitness Chatbot where user's chat with bot and get advice, diet plan, wo
 
 ## WebApp Snapshots
 ![Project snap](https://drive.google.com/uc?id=13afkPi4Ftup60nfyyOwpnuAhq3GY0cP3)
+
+![Project snap](https://drive.google.com/uc?id=1uv1QZpbMjC7_1ugFXbGFM12R_ahDNgRL)
+
+![Project snap](https://drive.google.com/uc?id=12JebBj5s_7zjzUjp2ay6q2edb1jVTctN)
+
+![Project snap](https://drive.google.com/uc?id=1EJ5y7v34JwJPGN-suVcPqioFvYgZHiH8)
+
+![Project snap](https://drive.google.com/uc?id=1pGSaGXeEG29uS_dLyrmViC4XTHFc5zs_)
