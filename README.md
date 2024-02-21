@@ -59,3 +59,5 @@ This is Fitness Chatbot where user's chat with bot and get advice, diet plan, wo
 ![Project snap](https://drive.google.com/uc?id=1EJ5y7v34JwJPGN-suVcPqioFvYgZHiH8)
 
 ![Project snap](https://drive.google.com/uc?id=1pGSaGXeEG29uS_dLyrmViC4XTHFc5zs_)
+
+![video](https://drive.google.com/uc?id=1on7iKvXa0LQ7kh0OGH81Q__tZflE3Flp)
