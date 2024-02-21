@@ -1,16 +1,16 @@
-# `Fitness App🏋️‍♀️ using Google Gemini-Pro and Gemini-Pro-Vision(both combined) and Django Framework`
+# Fitness App🏋️‍♀️ using Google Gemini-Pro and Gemini-Pro-Vision(both combined) and Django Framework
 
 This is Fitness Chatbot where user's chat with bot and get advice, diet plan, workout plan. This app is also comes with Personalized feature where we pass the age, body type fitness goals and we also upload an body image and model will take all these values and image as well and generates the personalized diet plan, workout plan and advices.
 
-## `Project TechStack:`
-1. Language: Python
-2. Frontend: HTML, CSS
-3. Backend: Django, Python
-4. LLM Model: Google Gemini Pro and Gemini Pro Vision
-5. Version Control: Git and Github
-6. Cloud Platform: Google Cloud Platform(GCP)
+## Project TechStack
+1. Language: `Python`
+2. Frontend: `HTML, CSS`
+3. Backend: `Django, Python`
+4. LLM Model: `Google Gemini Pro and Gemini Pro Vision`
+5. Version Control: `Git and Github`
+6. Cloud Platform: `Google Cloud Platform(GCP)`
 
-## `How to Run on Local Machine`
+## How to Run on Local Machine
 1. **Create a folder in any disk where you want your project should store**
 2. **Create a virtual environment either using pip or conda**
     ```
@@ -49,7 +49,7 @@ This is Fitness Chatbot where user's chat with bot and get advice, diet plan, wo
     ```
 10. **You can see the running project or WebApp**
 
-## `How to deploy on cloud`
+## How to deploy on cloud
 
-## `WebApp Snapshots`
+## WebApp Snapshots
 ![Project snap](https://drive.google.com/uc?id=1biVyxZ3j96mPpXEEBJrC1ZWk3-9Ynk8T)
